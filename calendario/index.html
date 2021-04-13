@@ -9,39 +9,39 @@
 </head>
 
 <body>
-<!---
+    <main>
         <form action="">
-            <label for="hora"></label>
-            <span>Hora</span>
-            <input type="time" id="hora" name="hora" />
-        
+            <label for="nombre">
+                <span>¿Cual es tu nombre?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               </span>
+                <input type="text" name="nombre" id="nombre" autocomplete="name" required />
+            </label>
 
-        <form action="dia">
-            <label for="dia"></label>
-            <span>Día</span>
-            <input type="date" id="dia" name="dia" />
-        
 
-        <form action="">
-            <label for="semana"></label>
-            <span>Semana</span>
-            <input type="week" id="semana" name="semana" />
-            <label for="hora">
-        
+            <label for="correo">
+                <span>¿Cual es tu correo?</span>
+                <input type="email" name="correo" id="correo" autocomplete="email" required />
+            </label>
 
-        <form action="">
-            <label for="mes"></label>
-            <span>Mes</span>
-            <input type="month" id="mes" name="mes" />
-        </form> 
--->
-       <form action="">
-        <label for="Calendario">
-            <span>Calendario</span>
-            <input type="datetime-local" id="calendario" name="calendario">
-        </label>
-       </form>
-    
+            <label for="pais">
+                <span>¿En que pais vives?</span>
+                <input type="text" name="pais" id="pais" autocomplete="country" required />
+            </label>
+
+            <label for="cp">
+                <span>¿Cual es tu codigo postal?</span>
+                <input type="text" name="cp" id="cp" autocomplete="postal-code" required />
+            </label>
+
+
+        
+           <select name="sexo" id="">
+               <option value="Hombre">Hombre</option>
+               <option value="Mujer">Mujer</option>
+           </select>
+
+            <input type="submit"/>
+        </form>
+    </main>
 </body>
 
 </html>
