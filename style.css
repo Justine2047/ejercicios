@@ -1,0 +1,58 @@
+body{
+    background-color: plum;
+}
+
+
+h1{
+    margin: 30px;
+    text-align: center;
+    font 40px
+   
+}
+
+.pedido{
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .ul   {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 200%;
+    padding: 5px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+ .img-container
+ {
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: -1;
+   
+}
+
+
+.img-fruta
+{
+border-radius: 20px;
+
+}
+
+
+.img-2
+{
+    border-radius: 100px;
+}
+
+.contenedor
+{
+    display: flexbox    
+}
