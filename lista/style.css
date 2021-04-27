@@ -1,11 +1,27 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: darkgrey;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
   font-family: "Poppins", sans-serif;
 }
 
 .main-nav {
-  margin-top: 10px;
-  background-color: pink;
+  background-color: #8f5f6a;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main-nav__item a::after {
@@ -13,20 +29,17 @@ body {
 }
 
 .main-nav__item {
-  color: green;
-  padding: 20px;
-  border-radius: 30px;
-  text-decoration: none;
+  padding: 15px;
   display: inline-block;
+  background-color: transparent;
 }
 
 .header {
   width: 100%;
-  height: 600 px;
-  background: rgb(0, 119, 255);
+  height: 300px;
   background: url("img/header.jpg");
   display: flex;
-  transition: 0.5s;
+  font-family: "Poppins", sans-serif;
 }
 
 .img-conejo {
@@ -44,31 +57,40 @@ h2 {
   text-align: center;
   color: purple;
   font-style: bold;
-  font-size: 15px;
+  font-size: 16px;
 }
 .pedido {
-  font-size: 20px;
+  font-size: 12px;
   margin: 35px;
   padding: 40px;
   list-style-type: none;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-style: bold;
-  text-decoration: none;
-  color: black;
+  color: purple;
 }
 
 .pedido a:active {
-  color: red;
+  color: green;
 }
+
 .pedido a:hover {
   color: pink;
 }
+
 .img-fruta {
-  border-radius: 280px;
+  border-radius: 500px;
 }
 
 .flex-container {
   display: flex;
   justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.main-nav a:hover {
+  color: pink;
 }
